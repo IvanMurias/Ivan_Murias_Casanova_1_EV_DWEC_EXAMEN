@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Poetsen One';
+    src: url(../assets/font/PoetsenOne-Regular.ttf);
+}
+body{
+    background-image: url(../assets/img/sunset-4823507_1280.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover
+}
+h1{
+    padding: 2%;
+    text-align: center;
+    font-family: 'Poetsen One';
+    font-size: 40px;    
+}
+ol{
+    list-style: none;
+}
+li{
+    font-family: 'Poetsen One';
+    place-items: end space-between;
+}
+input{
+    border-radius: 5px;
+    border: none;
+}
+
+/* Ambos botones */
+button{
+    font-family: 'Poetsen One';
+    font-size: 14px;
+    padding: 0.7rem;
+    border: solid 3px black;
+    height: 2.5rem;
+}
+
+/* Contenedor del div principal */
+.main_container{
+    background:radial-gradient(#f56a6a, #dec87a);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+}
+.task_list_container{
+    align-items: center;
+    justify-content: center;
+}
+.btn_create_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Boton create */
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+button.btn_create{
+    position: relative;
+}
+
+
+ /* Boton delete */
+
+.btn_delete_container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+button.btn_cleanse{
+    border-color: red;
+    color:red;
+    align-items: flex-end;
+}
+button.btn_cleanse:hover{
+    border-color: red;
+    color:white;
+    background: red;
+}
+
+/* El pseudoselector hover evalua la condicion de tener el raton encima del elemento. */
+
+.input_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taskInput{
+    width: 50%;
+    height: 1.5rem;
+}
+.liContainer{
+    display: flex;
+    flex-direction: column;  
+}
+.liDiv{
+    box-shadow: 2px 2px 4px 2px rgb(0, 0, 0, .3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    background-color: aquamarine;
+}
+.liDiv button{
+background-color: transparent;
+}
